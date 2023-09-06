@@ -1,0 +1,13 @@
+Many image based widgets do not perform well when the screen is resized. This
+is due to the fact that the image must be relocated and expanded, sometimes in
+multiple directions at once. You can significantly improve the user experience
+by using the following tips:
+
+1) Limit how the widgets move within the application window as the screen is
+    resized. You can do this by anchoring widget groups within containers. So
+    that they are not re-centering or repositioning as the screen size grows.
+
+2) Limit the expansion of the widget to a single dimension (horizontal or
+    vertical).
+
+3) Give the widget a size.

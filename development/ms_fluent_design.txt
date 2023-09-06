@@ -1,0 +1,32 @@
+COLOR ACCENTS
+A reference describing the formula used to find the accent color foreground
+https://github.com/MicrosoftDocs/windows-dev-docs/issues/1673#issuecomment-513945541
+
+    element.RequestedTheme = ((5 * c.G + 2 * c.R + c.B) <= 8 * 128)
+        ? ElementTheme.Light
+        : ElementTheme.Dark;
+
+Use the accent colors for hover states
+https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette
+
+CORNER RADIUS
+4px corner radius on all controls
+8px corner radius on all overlays
+
+TYPE RAMP
+https://learn.microsoft.com/en-us/windows/apps/design/style/xaml-theme-resources#the-xaml-type-ramp
+
+Caption         Regular     12
+Body            Regular     14
+Body Strong     Regular     14
+Body Large      Regular     18
+Subtitle        Semibold    20
+Title           Semibold    28
+Title Large     Semibold    40
+Display         Semibold    68
+
+
+SIZING
+https://learn.microsoft.com/en-us/windows/apps/design/style/spacing#fluent-standard-sizing
+
+Items align to a 40 x 40 pixel grid
